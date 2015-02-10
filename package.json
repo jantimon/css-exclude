@@ -35,8 +35,5 @@
   "bugs": {
     "url": "https://github.com/jantimon/css-exclude/issues"
   },
-  "homepage": "https://github.com/jantimon/css-exclude",
-  "directories": {
-    "test": "test"
-  }
+  "homepage": "https://github.com/jantimon/css-exclude"
 }
