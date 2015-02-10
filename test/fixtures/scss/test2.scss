@@ -1,0 +1,8 @@
+/**
+ * @exclude
+ * @file test1.scss
+ * @selector '*.nasty *'
+ */
+.example {
+    content: 'hello world';
+}

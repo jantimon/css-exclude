@@ -1,0 +1,16 @@
+.valid {
+  content: 'this selector should not be removed'; }
+
+.nasty {
+  content: 'this selector should not be removed'; }
+
+.valid {
+  content: 'please remove only the invalid part'; }
+
+/**
+ * @exclude
+ * @file test1.scss
+ * @selector '*.nasty *'
+ */
+.example {
+  content: 'hello world'; }

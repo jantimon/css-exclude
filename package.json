@@ -1,0 +1,41 @@
+{
+  "name": "css-exclude",
+  "version": "0.0.1",
+  "description": "postcss processor to remove css selectors with annotations",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jantimon/css-exclude"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha --report html -- test/*.js --reporter spec",
+    "istanbul": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | rm -rf ./coverage"
+  },
+  "keywords": [
+    "css",
+    "node",
+    "postcss"
+  ],
+  "author": "Jan Nicklas <j.nicklas@me.com> (https://github.com/jantimon)",
+  "license": "MIT",
+  "dependencies": {
+    "css-annotation": "^0.3.0",
+    "minimatch": "^2.0.1",
+    "postcss": "^4.0.3",
+    "urldata": "0.0.1"
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.2",
+    "less": "^2.4.0",
+    "mocha": "^2.0.1",
+    "node-sass": "^2.0.0-beta",
+    "should": "^4.6.2"
+  },
+  "bugs": {
+    "url": "https://github.com/jantimon/css-exclude/issues"
+  },
+  "homepage": "https://github.com/jantimon/css-exclude",
+  "directories": {
+    "test": "test"
+  }
+}
