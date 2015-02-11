@@ -23,7 +23,7 @@ vendor.less
 
 vendor.less
 ```css
-  @import 'vendor'
+  @import 'vendor';
   /*
    * @exclude
    * @file vendor.less
