@@ -14,6 +14,10 @@ Overwriting long selectors is a real pain and causes code which is hard to maint
 
 vendor.less
 ```css
+  tr.heading {
+    background: #eee;
+  }
+
   #nasty .funky > .crazy:first-child {
     table > tr.heading {
       border-top: 1px solid grey;
@@ -36,6 +40,10 @@ vendor.less
 
 result.css
 ```css
+  tr.heading {
+    background: #eee;
+  }
+  
   /*
    * @exclude
    * @file vendor.less
