@@ -34,6 +34,18 @@ vendor.less
   }
 ```
 
+result.css
+```css
+  /*
+   * @exclude
+   * @file vendor.less
+   * @selector '#nasty * tr.heading'
+   */
+  tr.heading {
+    border-top: 1px solid #0f0f0f;
+  }
+```
+
 ## Tests
 
 [![Build Status](https://secure.travis-ci.org/jantimon/html-tpl-loader.svg?branch=master)](http://travis-ci.org/jantimon/html-tpl-loader)
