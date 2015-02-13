@@ -14,7 +14,7 @@ Overwriting long selectors is a real pain and causes code which is hard to maint
 
 *css-exclude* is a [postcss](https://github.com/postcss/postcss) processor similar to autoprefixer.  
 So this library works with vanilla css and any preprocess which support inline source maps.  
-Right now there are [tests for *vanilla css**, **sass** and **less**](https://github.com/jantimon/css-exclude/tree/master/test)
+Right now there are [tests for **vanilla css**, **sass** and **less**](https://github.com/jantimon/css-exclude/tree/master/test)
 
 
 ## Example
