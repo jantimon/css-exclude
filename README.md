@@ -13,7 +13,7 @@ Overwriting long selectors is a real pain and causes code which is hard to maint
 ## How does it work?
 
 *css-exclude* is a [postcss](https://github.com/postcss/postcss) processor similar to autoprefixer.  
-So this library works with any preprocess whith inline source map support.  
+So this library works with any preprocess with inline source map support.  
 Right now there are [tests for **sass** and **less**](https://github.com/jantimon/css-exclude/tree/master/test)
 
 
