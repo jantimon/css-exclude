@@ -1,6 +1,6 @@
 {
   "name": "css-exclude",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "postcss processor to remove css selectors with annotations",
   "main": "index.js",
   "repository": {
@@ -19,7 +19,7 @@
   "author": "Jan Nicklas <j.nicklas@me.com> (https://github.com/jantimon)",
   "license": "MIT",
   "dependencies": {
-    "css-annotation": "^0.3.0",
+    "css-annotation": "^0.4.0",
     "minimatch": "^2.0.1",
     "postcss": "^4.0.3",
     "urldata": "0.0.1"
