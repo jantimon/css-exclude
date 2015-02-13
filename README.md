@@ -5,16 +5,18 @@
 [![Coverage Status](https://coveralls.io/repos/jantimon/css-exclude/badge.png)](https://coveralls.io/r/jantimon/css-exclude)
 [![Dependency Status](https://david-dm.org/jantimon/css-exclude.png)](https://david-dm.org/jantimon/css-exclude)
 
+**excludes ugly vendor selectors**
+
 ## Motivation
 
 Overwriting long selectors is a real pain and causes code which is hard to maintain.  
-**css-exclude** allows you to remove those selectors.
+**css-exclude** allows you to choose which of those selectors don't belong in your stylehsheet.
 
 ## How does it work?
 
-*css-exclude* is a [postcss](https://github.com/postcss/postcss) processor similar to autoprefixer.  
-So this library works with vanilla css and any preprocess which support inline source maps.  
-Right now there are [tests for **vanilla css**, **sass** and **less**](https://github.com/jantimon/css-exclude/tree/master/test)
+*css-exclude* is a [postcss](https://github.com/postcss/postcss) processor like other famous modules e.g. autoprefixer or webpcss.
+It supports vanilla css and any preprocessor which supports inline source maps.  
+For more information on compatibility take a look at the [tests for **vanilla css**, **sass** and **less**](https://github.com/jantimon/css-exclude/tree/master/test)
 
 
 ## Example
@@ -32,7 +34,7 @@ vendor.less
   }
 ```
 
-vendor.less
+main.less
 ```css
   @import 'vendor';
   /*
@@ -65,7 +67,7 @@ result.css
 
 ### Grunt
 
-<img height=100 src="https://camo.githubusercontent.com/39242419c60a53e1f3cecdeecb2460acce47366f/687474703a2f2f6772756e746a732e636f6d2f696d672f6772756e742d6c6f676f2d6e6f2d776f72646d61726b2e737667">
+<img height="100" src="https://camo.githubusercontent.com/39242419c60a53e1f3cecdeecb2460acce47366f/687474703a2f2f6772756e746a732e636f6d2f696d672f6772756e742d6c6f676f2d6e6f2d776f72646d61726b2e737667">
 
 As *css-exclude* is a [postcss]((https://github.com/postcss/postcss)) plugin it does **not** need a custom grunt plugin but 
 can be used with the [grunt-postcss plugin](https://github.com/nDmitry/grunt-postcss).
