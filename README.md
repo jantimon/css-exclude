@@ -67,7 +67,7 @@ result.css
 
 <img height=100 src="https://camo.githubusercontent.com/39242419c60a53e1f3cecdeecb2460acce47366f/687474703a2f2f6772756e746a732e636f6d2f696d672f6772756e742d6c6f676f2d6e6f2d776f72646d61726b2e737667">
 
-As *css-exclude* is a [postcss]((https://github.com/postcss/postcss)) plugin it does *not** need a custom grunt plugin but 
+As *css-exclude* is a [postcss]((https://github.com/postcss/postcss)) plugin it does **not** need a custom grunt plugin but 
 can be used with the [grunt-postcss plugin](https://github.com/nDmitry/grunt-postcss).
 
 ```
@@ -94,7 +94,7 @@ grunt.initConfig({
 
 <img height="100" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp.png">
 
-As *css-exclude* is a [postcss]((https://github.com/postcss/postcss)) plugin it does *not** need a custom gulp plugin but 
+As *css-exclude* is a [postcss]((https://github.com/postcss/postcss)) plugin it does **not** need a custom gulp plugin but 
 can be used with the [gulp-postcss plugin](https://github.com/w0rm/gulp-postcss).
 
 ```
