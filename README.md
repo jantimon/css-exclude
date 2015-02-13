@@ -7,14 +7,14 @@
 
 ## Motivation
 
-Overwriting long selectors is a real pain and causes code which is hard to maintain.
-*css-exclude* allows you to overwrite selectors with high specificity.
+Overwriting long selectors is a real pain and causes code which is hard to maintain.  
+**css-exclude** allows you to remove those selectors.
 
 ## How does it work?
 
 *css-exclude* is a [postcss](https://github.com/postcss/postcss) processor similar to autoprefixer.  
-So this library works with any preprocess with inline source map support.  
-Right now there are [tests for **sass** and **less**](https://github.com/jantimon/css-exclude/tree/master/test)
+So this library works with vanilla css and any preprocess which support inline source maps.  
+Right now there are [tests for *vanilla css**, **sass** and **less**](https://github.com/jantimon/css-exclude/tree/master/test)
 
 
 ## Example
@@ -119,6 +119,7 @@ gulp.task('css', function () {
 ## Tests
 
 [![Build Status](https://secure.travis-ci.org/jantimon/html-tpl-loader.svg?branch=master)](http://travis-ci.org/jantimon/html-tpl-loader)
+[![Coverage Status](https://coveralls.io/repos/jantimon/css-exclude/badge.png)](https://coveralls.io/r/jantimon/css-exclude)
 
 Run unit tests:
 
