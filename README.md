@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/jantimon/css-exclude.svg)](https://travis-ci.org/jantimon/css-exclude)
 [![NPM version](https://badge.fury.io/js/css-exclude.svg)](http://badge.fury.io/js/css-exclude)
 [![Coverage Status](https://coveralls.io/repos/jantimon/css-exclude/badge.png)](https://coveralls.io/r/jantimon/css-exclude)
+[![Code Climate](https://codeclimate.com/github/jantimon/css-exclude/badges/gpa.svg)](https://codeclimate.com/github/jantimon/css-exclude)
 [![Dependency Status](https://david-dm.org/jantimon/css-exclude.png)](https://david-dm.org/jantimon/css-exclude)
 
 **excludes ugly vendor selectors**
