@@ -1,6 +1,6 @@
 {
   "name": "css-exclude",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "postcss processor to remove css selectors with annotations",
   "main": "index.js",
   "repository": {
