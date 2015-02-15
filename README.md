@@ -9,13 +9,13 @@
 
 ## Motivation
 
-Overwriting long selectors is a real pain and causes code which is hard to maintain.  
+Overwriting long selectors is a real pain and causes code which is hard to maintain.
 **css-exclude** allows you to choose which of those selectors don't belong in your stylehsheet.
 
 ## How does it work?
 
 *css-exclude* is a [postcss](https://github.com/postcss/postcss) processor like other famous modules e.g. autoprefixer or webpcss.
-It supports vanilla css and any preprocessor which supports inline source maps.  
+It supports vanilla css and any preprocessor which supports inline source maps.
 For more information on compatibility take a look at the [tests for **vanilla css**, **sass** and **less**](https://github.com/jantimon/css-exclude/tree/master/test)
 
 
@@ -52,7 +52,7 @@ result.css
   tr.heading {
     background: #eee;
   }
-  
+
   /*
    * @exclude
    * @file vendor.less
@@ -69,7 +69,7 @@ result.css
 
 <img height="100" src="https://camo.githubusercontent.com/39242419c60a53e1f3cecdeecb2460acce47366f/687474703a2f2f6772756e746a732e636f6d2f696d672f6772756e742d6c6f676f2d6e6f2d776f72646d61726b2e737667">
 
-As *css-exclude* is a [postcss]((https://github.com/postcss/postcss)) plugin it does **not** need a custom grunt plugin but 
+As *css-exclude* is a [postcss]((https://github.com/postcss/postcss)) plugin it does **not** need a custom grunt plugin but
 can be used with the [grunt-postcss plugin](https://github.com/nDmitry/grunt-postcss).
 
 ```
@@ -82,7 +82,7 @@ grunt.initConfig({
     options: {
       map: true,
       processors: [
-        require('css-exclude').postcss
+        require('css-exclude')({debug: true}).postcss
       ]
     },
     dist: {
@@ -96,7 +96,7 @@ grunt.initConfig({
 
 <img height="100" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp.png">
 
-As *css-exclude* is a [postcss]((https://github.com/postcss/postcss)) plugin it does **not** need a custom gulp plugin but 
+As *css-exclude* is a [postcss]((https://github.com/postcss/postcss)) plugin it does **not** need a custom gulp plugin but
 can be used with the [gulp-postcss plugin](https://github.com/w0rm/gulp-postcss).
 
 ```
@@ -106,11 +106,10 @@ $ npm install gulp-postcss css-exclude --save-dev
 ```js
 var postcss = require('gulp-postcss');
 var gulp = require('gulp');
-var cssExclude = require('css-exclude');
 
 gulp.task('css', function () {
     var processors = [
-        cssExclude()
+        require('css-exclude')({debug: true})
     ];
     return gulp.src('./src/*.css')
         .pipe(postcss(processors))

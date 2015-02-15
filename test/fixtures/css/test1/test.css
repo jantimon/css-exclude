@@ -1,0 +1,12 @@
+/**
+ * @exclude
+ * @file file1
+ * @file file2
+ * @files file3, file4
+ * @files 'file5', "file6"
+ * @selector
+ * @selector .demo
+ */
+.foo {
+    display: block;
+}

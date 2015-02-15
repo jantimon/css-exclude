@@ -1,6 +1,6 @@
 {
   "name": "css-exclude",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "postcss processor to remove css selectors with annotations",
   "main": "index.js",
   "repository": {
@@ -29,8 +29,7 @@
     "istanbul": "^0.3.5",
     "less": "^2.4.0",
     "mocha": "^2.1.0",
-    "node-sass": "^2.0.1",
-    "should": "^5.0.0"
+    "node-sass": "^2.0.1"
   },
   "bugs": {
     "url": "https://github.com/jantimon/css-exclude/issues"

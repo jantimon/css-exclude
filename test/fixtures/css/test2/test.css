@@ -1,0 +1,8 @@
+/**
+ * No exclude flag
+ * @file invalid
+ * @selector invalid
+ */
+.bar {
+    display: inline-block;
+}
