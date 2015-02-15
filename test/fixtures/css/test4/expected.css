@@ -6,12 +6,6 @@
     content: 'this selector should not be removed';
 }
 
-/*> css-exclude selector: .nasty > .example <*/
-
-/*> css-exclude selector: a .really > .nasty #selector .example <*/
-
-/*> css-exclude selector: .nasty .invalid <*/
-
 .valid {
     content: 'please remove only the invalid part';
 }

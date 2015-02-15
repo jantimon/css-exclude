@@ -4,6 +4,12 @@
 .nasty {
   content: 'this selector should not be removed'; }
 
+/*> css-exclude selector: .nasty > .example <*/
+
+/*> css-exclude selector: a .really > .nasty #selector .example <*/
+
+/*> css-exclude selector: .nasty .invalid <*/
+
 .valid {
   content: 'please remove only the invalid part'; }
 
@@ -14,4 +20,4 @@
  */
 .example {
   content: 'hello world'; }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRlc3QxLnNjc3MiLCJtYWluLmNzcyIsInRlc3QyLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDVyxnREFBQSxFQUFBOztBQUdYO0VBQ1csZ0RBQUEsRUFBQTs7QUFhSDtFQUNHLGdEQUFBLEVBQUE7O0FDSlg7Ozs7SUFJRztBQ2RIO0VBQ0ksd0JBQVMsRUFBQSIsImZpbGUiOiJ0by5jc3MifQ== */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRlc3QxLnNjc3MiLCJtYWluLmNzcyIsInRlc3QyLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDVyxnREFBQSxFQUFBOztBQUdYO0VBQ1csZ0RBQUEsRUFBQTs7Ozs7Ozs7QUFhSDtFQUNHLGdEQUFBLEVBQUE7O0FDSlg7Ozs7SUFJRztBQ2RIO0VBQ0ksd0JBQVMsRUFBQSIsImZpbGUiOiJ0by5jc3MifQ== */

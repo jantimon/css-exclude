@@ -12,12 +12,14 @@ describe('css-exclude', function () {
 
   it('should excludes styles from sass input', function () {
     var css = sassFixtures();
-    assert.equal(cssExclude().transform(css).css, readTestFileSync('fixtures/scss/expected.css'));
+    var result = cssExclude().transform(css);
+    assert.equal(result.css, readTestFileSync('fixtures/scss/expected.css'));
   });
 
   it('should excludes styles from less input', function (done) {
     lessFixtures(function (css) {
-      assert.equal(cssExclude().transform(css).css, readTestFileSync('fixtures/less/expected.css'));
+      var result = cssExclude({placeComments: true}).transform(css);
+      assert.equal(result.css, readTestFileSync('fixtures/less/expected.css'));
       done();
     });
   });
@@ -28,6 +30,15 @@ describe('css-exclude', function () {
     var cwd = path.resolve(__dirname, 'fixtures/css/test3');
     var result = postcss().use(cssExclude({ cwd: cwd}).postcss).process(testFile);
     assert.equal(result.css, readTestFileSync('fixtures/css/test3/expected.css'));
+  });
+
+  it('should excludes styles from css input without placing debug comments', function() {
+    var testFile = parseTestFileSync('fixtures/css/test4/test-1.css');
+    testFile.append(parseTestFileSync('fixtures/css/test4/test-2.css'));
+    var cwd = path.resolve(__dirname, 'fixtures/css/test4');
+    var processor = cssExclude({ cwd: cwd, placeComments: false});
+    var result = postcss().use(processor).process(testFile);
+    assert.equal(result.css, readTestFileSync('fixtures/css/test4/expected.css'));
   });
 
   it('should excludes styles from sass input using the default configuration', function() {
