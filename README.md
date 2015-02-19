@@ -11,7 +11,7 @@
 ## Motivation
 
 Overwriting long selectors is a pain and might cause unmaintainable code.  
-*css-exclude* is post processor that allows you to choose which of those selectors don't belong in your final stylehsheet.  
+*css-exclude* is a post processor that allows you to choose which of those selectors don't belong in your final stylehsheet.  
 Just by writing a css comment.
 
 ## How does it work?
