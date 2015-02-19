@@ -50,11 +50,11 @@ describe('css-exclude', function () {
     var origInfo = console.log;
     var logs = [];
     console.log = function () {
-      logs.push(Array.prototype.join.call(arguments, ' - '));
+      logs.push(Array.prototype.join.call(arguments, ' '));
     };
     cssExclude({debug: true}).transform(css);
     console.log = origInfo;
-    assert.deepEqual(logs, ['test1.scss - 3 - matches', 'test2.scss - 0 - matches']);
+    assert.deepEqual(logs, ['test1.scss  -  3 matches', 'test2.scss  -  no matches']);
   });
 
   it('should log the match count for all files', function () {
@@ -62,11 +62,11 @@ describe('css-exclude', function () {
     var origInfo = console.log;
     var logs = [];
     console.log = function () {
-      logs.push(Array.prototype.join.call(arguments, ' - '));
+      logs.push(Array.prototype.join.call(arguments, ' '));
     };
     cssExclude({verbose: true}).transform(css);
     console.log = origInfo;
-    assert.deepEqual(logs, ['test1.scss - 3 - matches']);
+    assert.deepEqual(logs, ['test1.scss  -  3 matches']);
   });
 
 });
