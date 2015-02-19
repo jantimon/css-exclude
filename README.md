@@ -6,12 +6,13 @@
 [![Code Climate](https://codeclimate.com/github/jantimon/css-exclude/badges/gpa.svg)](https://codeclimate.com/github/jantimon/css-exclude)
 [![Dependency Status](https://david-dm.org/jantimon/css-exclude.png)](https://david-dm.org/jantimon/css-exclude)
 
-**excludes ugly vendor selectors**
+**get rid of ugly third party selectors**
 
 ## Motivation
 
-Overwriting long selectors is a real pain and causes code which is hard to maintain.
-**css-exclude** allows you to choose which of those selectors don't belong in your stylehsheet.
+Overwriting long selectors is a pain and might cause unmaintainable code.  
+*css-exclude* is post processor that allows you to choose which of those selectors don't belong in your final stylehsheet.  
+Just by writing a css comment.
 
 ## How does it work?
 
